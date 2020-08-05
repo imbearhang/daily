@@ -1,0 +1,8 @@
+// 一个查询月份天数的方法
+function getMonthDate(year, month){
+    let d = new Date(year, month, 0);
+    return d.getDate();
+}
+
+在使用时传入想要获取的年份和月份即可，如下：
+let totalDay = getMonthDate(2020,2);   //29
